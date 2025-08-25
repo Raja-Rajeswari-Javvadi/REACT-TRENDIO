@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* Wire the search input to SearchContext */}
         <form
           className="search"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={(e) =>console.log(searchTerm)}
           role="search"
         >
           <input
@@ -38,13 +38,14 @@ const Navbar = () => {
           />
           {searchTerm && (
             <button
-              type="button"
+
+              type="submit"
               className="btn btn-clear"
-              onClick={clearSearch}
+              // onClick={clearSearch}
               aria-label="Clear search"
               title="Clear"
             >
-              ✕
+              search
             </button>
           )}
         </form>
