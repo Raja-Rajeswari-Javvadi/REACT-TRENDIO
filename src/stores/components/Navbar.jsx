@@ -26,7 +26,7 @@ const Navbar = () => {
 
         {/* Wire the search input to SearchContext */}
         <form
-          className="search"
+          className="search "
           onSubmit={(e) =>console.log(searchTerm)}
           role="search"
         >

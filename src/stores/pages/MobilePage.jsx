@@ -21,8 +21,8 @@ const MobilePage = () => {
     const matchesBrand =
       selectedBrands.length === 0 || selectedBrands.includes(item.brand);
     const matchesSearch =
-      item.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.model.toLowerCase().includes(searchTerm.toLowerCase());
+      item.brand?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.model?.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesBrand && matchesSearch;
   });
 

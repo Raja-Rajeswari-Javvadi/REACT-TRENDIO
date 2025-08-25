@@ -8,7 +8,7 @@ import { SearchProvider } from "./stores/context/SearchContext.jsx"; // ✅ impo
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/REACT-TRENDIO">
       <CartProvider>
         <SearchProvider>
           <App />
